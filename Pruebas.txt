@@ -1,0 +1,67 @@
+Crear producto
+
+http://localhost:8080/api/products/
+
+{
+  "name": "Product 5",
+  "description": "Este es un producto de prueba",
+  "price": 1600
+}
+
+Mostrar producto 300
+
+http://localhost:8080/api/products/300
+
+Agregar un nuevo producto con los campos
+
+http://localhost:8080/api/products/
+
+{
+    "title":"Producto de ejemplo",
+    "description":"Este es un producto de ejemplo",
+    "code":"ar",
+    "price": 1250,
+    "status":0,
+    "stock":2,
+    "category":"Prueba",
+    "thumbnails":"https://ejemplo.com/imagen.jpg"
+
+
+}
+
+Actualizar producto
+
+http://localhost:8080/api/products/100
+
+{
+  "name": "Producto actualizado",
+  "description": "Esta es una descripción actualizada del producto",
+  "price": 1900,
+  "stock": 10
+}
+
+
+Borrar producto
+
+http://localhost:8080/api/products/100
+
+
+*****************************************************************************
+
+Crear carrito
+
+http://localhost:8080/api/carts/
+
+
+Agregar al carrito
+
+http://localhost:8080/api/carts/1680024875713/product/300
+
+{
+  "id": 300
+}
+
+
+Mostrar carrito
+
+http://localhost:8080/api/carts/1680024875713
